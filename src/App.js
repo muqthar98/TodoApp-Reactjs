@@ -8,7 +8,7 @@ export default function App(){
   const[todos,setTodos] = useState("");
   const[input,setInput] = useState("");
 
-  const addTodo = {Event}{
+  const addTodo = {event}{
     setTodos([...todos,input]);
   }
 
@@ -21,7 +21,7 @@ export default function App(){
 	<FormControl>
   <InputLabel>Todo</InputLabel>
   <Input value={input} onChange={event => setInput[event.target.value]}/>
-	<Button className="btn-md btn-block btn-light Add">Add Todo</Button>
+	<Button onClick={addTodo} className="btn-md btn-block btn-light Add">Add Todo</Button>
 	<Button className="btn-md btn-block btn-dark Delete">Delete Todo</Button>
   </FormControl>
   <div>
